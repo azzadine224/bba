@@ -11,7 +11,7 @@ const useFetchtwo = () => {
     const itemsApi =`/.netlify/functions/getCharacters`; 
    useEffect(() => {
     axios.get(itemsApi).then((response) => {
-        setItems(response);
+        setItems(response.data);
       });
 },[])  
 
