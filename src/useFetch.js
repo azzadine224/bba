@@ -22,9 +22,9 @@ useEffect (() =>{
         const allQuotes = allData[1]
         const allDeaths = allData[2]
 
-        setItems(allCharacters)
-        setQuotes(allQuotes)
-        setDeaths(allDeaths)
+        setItems(allCharacters.data)
+        setQuotes(allQuotes.data)
+        setDeaths(allDeaths.data)
       })
       )
   }
